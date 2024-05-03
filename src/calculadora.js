@@ -13,17 +13,17 @@ function CalculatorScreen() {
       setResult(res.toString());
     };
   
-    const subtract = () => {
+    const resta = () => {
       const res = parseFloat(num1) - parseFloat(num2);
       setResult(res.toString());
     };
   
-    const multiply = () => {
+    const multi = () => {
       const res = parseFloat(num1) * parseFloat(num2);
       setResult(res.toString());
     };
   
-    const divide = () => {
+    const divi = () => {
       if (parseFloat(num2) === 0) {
         setResult("dividir en cero no se puede ");
       } else {
@@ -51,15 +51,15 @@ function CalculatorScreen() {
             Texto="Suma"
           />
           <CustomButton
-            onPress={subtract}
+            onPress={resta}
             Texto="Resta"
           />
           <CustomButton
-            onPress={multiply}
+            onPress={multi}
             Texto="Multi"
           />
           <CustomButton
-            onPress={divide}
+            onPress={divi}
             Texto="Divi"
           />
         </View>
